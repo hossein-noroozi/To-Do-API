@@ -10,6 +10,7 @@ using Microsoft.Extensions.Logging;
 
 namespace ToDoApi
 {
+#pragma warning disable CS1591
     public class Program
     {
         public static void Main(string[] args)
@@ -21,4 +22,6 @@ namespace ToDoApi
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>();
     }
+
+#pragma warning restore CS1591
 }
